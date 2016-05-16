@@ -5,6 +5,7 @@ import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.sns.AmazonSNSClient;
 import com.amazonaws.services.sqs.AmazonSQSClient;
+import com.wuyouz.pubsub.aws.AWSTopicManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,9 +17,9 @@ import static org.junit.Assert.*;
 /**
  * Created by dqliu on 5/7/16.
  */
-public class TopicManagerTest {
+public class AWSTopicManagerTest {
 
-    private TopicManager manager = new TopicManager();
+    private AWSTopicManager manager = new AWSTopicManager();
 
     @Before
     public void setUp() throws Exception {

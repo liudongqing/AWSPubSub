@@ -8,7 +8,7 @@ public class Subscription {
     private final String uri;
     private final String queueUrl;
 
-    Subscription(final String uri, final String queueUrl) {
+    public Subscription(final String uri, final String queueUrl) {
         this.uri = uri;
         this.queueUrl = queueUrl;
     }
